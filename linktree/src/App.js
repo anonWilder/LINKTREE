@@ -14,7 +14,7 @@ function App() {
   // }
   const data = {
     name: "Kenechukwu Egbonu",
-    image: "kenechukwu.jpg",
+    image: "https://github.com/anonWilder.png",
     links: [
       {
         name: "Twitter Link",
@@ -48,14 +48,14 @@ function App() {
         <Avatar
           image={data.image}
           size="large"
-          shape=""
+          shape="circle"
         ></Avatar>
       </div>
       <div className='p-d-flex p-jc-center p-ai-center'>
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
       <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-d-flex p-flex-column' style={{width: 60 + "%",}}>
+        <div className='p-d-flex p-flex-column' style={{width: 70 + "%",  }}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary' 
