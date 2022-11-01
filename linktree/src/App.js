@@ -55,7 +55,7 @@ function App() {
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
       <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-d-flex p-flex-column' style={{width: 70 + "%",}}>
+        <div className='p-d-flex p-flex-column' style={{width: 60 + "%",}}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary' 
