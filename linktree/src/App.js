@@ -46,6 +46,7 @@ function App() {
       }
     ]
   }
+
   return (
     <div className='p-m-4'>
       <div className='p-d-flex p-jc-center p-ai-center'>
@@ -55,9 +56,11 @@ function App() {
           shape="circle"
         ></Avatar>
       </div>
+
       <div className='p-d-flex p-jc-center p-ai-center'>
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
+      
       <div className='p-d-flex p-jc-center p-ai-center'>
         <div className='p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
           {data.links.map((link) => (
@@ -70,13 +73,15 @@ function App() {
             ))}
         </div>
       </div>
+
       <div className='p-d-flex p-jc-center p-ai-center'>
         <div className='p-m-2'><i class="pi pi-slack" style={{'color': 'red'}}></i></div>
         <div><i class="pi pi-github"></i></div>
       </div>
-      <div className='m-8 p-d-flex p-jc-center p-ai-center'>
-        <div><img src={data.footc}/></div>
-        <div><a href='#'>HNG 9 Internship Frontend Task</a></div>
+
+      <div className='p-d-flex p-jc-center p-ai-center' style={{'justify-content': 'space-around'}}>
+        <div className='p-m-2'><img src={data.footc}/></div>
+        <div><a href='#' style={{'text-decoration': 'none', "color": "grey"}}>HNG 9 Internship Frontend Task</a></div>
         <div><img src={data.foottl}/></div>
       </div>
     </div>
