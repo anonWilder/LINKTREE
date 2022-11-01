@@ -14,7 +14,10 @@ function App() {
   // }
   const data = {
     name: "@Kenechi__",
-    image: "https://github.com/anonWilder.png",
+    profile: "https://github.com/anonWilder.png",
+    footerimg1: "vector.png",
+    footerimg2: "I4G.png",
+    footerimg3: "Vector (1).png",
     links: [
       {
         name: "Twitter Link",
@@ -33,7 +36,7 @@ function App() {
         url: "https://books.zuri.team/python-for-beginners?ref_id=<kenechukwu>",
       },
       {
-        name: "Background Check for Coders",
+        name: "Background Ceck for Coders",
         url: "https://background.zuri.team",
       },
       {
@@ -46,7 +49,7 @@ function App() {
     <div className='p-m-4'>
       <div className='p-d-flex p-jc-center p-ai-center'>
         <Avatar
-          image={data.image}
+          image={data.profile}
           size="large"
           shape="circle"
         ></Avatar>
@@ -65,6 +68,15 @@ function App() {
             </Button>
             ))}
         </div>
+      </div>
+      <div className='p-d-flex p-jc-center p-ai-center'>
+        <div className='p-m-2'><i class="pi pi-slack" style={{'color': 'red'}}></i></div>
+        <div><i class="pi pi-github"></i></div>
+      </div>
+      <div className='p-d-flex p-jc-center p-ai-center'>
+        <div className='p-m-4'>{data.footerimg1}</div>
+        <div>HNG 9 Internship Frontend Task</div>
+        <div>  </div>
       </div>
     </div>
   );
