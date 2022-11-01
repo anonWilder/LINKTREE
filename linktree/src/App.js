@@ -13,7 +13,7 @@ function App() {
   //   github: "black",
   // }
   const data = {
-    name: "Kenechukwu Egbonu",
+    name: "@Kenechi__",
     image: "https://github.com/anonWilder.png",
     links: [
       {
@@ -55,11 +55,11 @@ function App() {
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
       <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-p-4 p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
+        <div className='p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary p-jc-center p-ai-center' 
-            // style={{ color: colors[link.icon]}}
+            style={{ padding: "1rem", color: "black", backgroundColor: "#EAECF0", }}
             >
             {link.name}
             </Button>
