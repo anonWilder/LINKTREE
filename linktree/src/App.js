@@ -6,7 +6,7 @@ import 'primeflex/primeflex.css'
 import { Avatar } from 'primereact/avatar'
 import { Button } from 'primereact/button'
 
-function App() {
+function LinkMe() {
   // const colors = {
   //   youtube: "red",
   //   twitter: "blue",
@@ -14,7 +14,7 @@ function App() {
   // }
   const data = {
     name: "@Kenechi__",
-    profile: "https://github.com/anonWilder.png",
+    profile: "kenechukwu.jpg",
     footr: "vector.png",
     foottl: "I4G.png",
     footc: "Vector (1).png",
@@ -26,9 +26,9 @@ function App() {
       },
       {
         name: "Zuri Team",
-        url: "https://twitter.com/kenechi__/",
+        url: "https://zuri.team",
       },
-      {
+      {   
         name: "Zuri Books",
         url: "http://books.zuri.team",
       },
@@ -37,7 +37,7 @@ function App() {
         url: "https://books.zuri.team/python-for-beginners?ref_id=<kenechukwu>",
       },
       {
-        name: "Background Ceck for Coders",
+        name: "Background Check for Coders",
         url: "https://background.zuri.team",
       },
       {
@@ -60,13 +60,13 @@ function App() {
       <div className='p-d-flex p-jc-center p-ai-center'>
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
-      
+
       <div className='p-d-flex p-jc-center p-ai-center'>
         <div className='p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary p-jc-center p-ai-center' 
-            style={{ padding: "1rem", color: "black", backgroundColor: "#EAECF0", }}
+            style={{ padding: "1rem", color: "black", backgroundColor: "#EAECF0", border: "none", }}
             >
             {link.name}
             </Button>
@@ -74,18 +74,18 @@ function App() {
         </div>
       </div>
 
-      <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-m-2'><i class="pi pi-slack" style={{'color': 'red'}}></i></div>
+      <div className=' p-d-flex p-jc-center p-ai-center'>
+        <div className='p-m-2'><img src={data.logo} alt="logo" style={{'height': '1rem', "color": "grey"}}/></div>
         <div><i class="pi pi-github"></i></div>
       </div>
 
-      <div className='p-d-flex p-jc-center p-ai-center' style={{'justify-content': 'space-around'}}>
-        <div className='p-m-2'><img src={data.footc}/></div>
-        <div><a href='#' style={{'text-decoration': 'none', "color": "grey"}}>HNG 9 Internship Frontend Task</a></div>
-        <div><img src={data.foottl}/></div>
+      <div className='p-mt-6 p-d-flex p-jc-center p-ai-center' style={{'justify-content': 'space-around',}}>
+        <div className='p-m-2'><img src={data.footc} alt="zuri int."/></div>
+        <div><a href='https://background.zuri.team' style={{'text-decoration': 'none', "color": "grey"}}>HNG 9 Internship Frontend Task</a></div>
+        <div><img src={data.foottl} alt="HNG9"/></div>
       </div>
     </div>
   );
 }
 
-export default App;
+export default LinkMe;
