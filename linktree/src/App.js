@@ -62,7 +62,7 @@ function LinkMe() {
       </div>
 
       <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
+        <div className='p-d-flex p-flex-column ' style={{width: "70%"}}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary p-jc-center p-ai-center' 
