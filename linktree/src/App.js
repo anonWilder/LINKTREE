@@ -15,9 +15,10 @@ function App() {
   const data = {
     name: "@Kenechi__",
     profile: "https://github.com/anonWilder.png",
-    footerimg1: "vector.png",
-    footerimg2: "I4G.png",
-    footerimg3: "Vector (1).png",
+    footr: "vector.png",
+    foottl: "I4G.png",
+    footc: "Vector (1).png",
+    logo: "slack.png",
     links: [
       {
         name: "Twitter Link",
@@ -73,10 +74,10 @@ function App() {
         <div className='p-m-2'><i class="pi pi-slack" style={{'color': 'red'}}></i></div>
         <div><i class="pi pi-github"></i></div>
       </div>
-      <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-m-4'>{data.footerimg1}</div>
-        <div>HNG 9 Internship Frontend Task</div>
-        <div>  </div>
+      <div className='m-8 p-d-flex p-jc-center p-ai-center'>
+        <div><img src={data.footc}/></div>
+        <div><a href='#'>HNG 9 Internship Frontend Task</a></div>
+        <div><img src={data.foottl}/></div>
       </div>
     </div>
   );
