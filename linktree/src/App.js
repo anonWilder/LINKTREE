@@ -18,7 +18,7 @@ function App() {
     links: [
       {
         name: "Twitter Link",
-        url: "https://github.com/anonWilder/",
+        url: "https://twitter.com/kenechi__/",
       },
       {
         name: "Zuri Team",
@@ -26,19 +26,19 @@ function App() {
       },
       {
         name: "Zuri Books",
-        url: "https://twitter.com/kenechi__/",
+        url: "http://books.zuri.team",
       },
       {
         name: "Python Books",
-        url: "https://twitter.com/kenechi__/",
+        url: "https://books.zuri.team/python-for-beginners?ref_id=<kenechukwu>",
       },
       {
         name: "Background Check for Coders",
-        url: "https://twitter.com/kenechi__/",
+        url: "https://background.zuri.team",
       },
       {
         name: "Design Books",
-        url: "https://twitter.com/kenechi__/",
+        url: "https://books.zuri.team/design-rules",
       }
     ]
   }
@@ -55,7 +55,7 @@ function App() {
       <h3 className='p-m-4'>{data.name}</h3>
       </div>
       <div className='p-d-flex p-jc-center p-ai-center'>
-        <div className='p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
+        <div className='p-p-4 p-d-flex p-flex-column ' style={{width: 60 + "%"}}>
           {data.links.map((link) => (
           <Button 
             className='p-m-2 p-button-secondary p-jc-center p-ai-center' 
