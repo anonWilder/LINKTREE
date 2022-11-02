@@ -79,11 +79,13 @@ function LinkMe() {
         <div><i class="pi pi-github"></i></div>
       </div>
 
-      <div className='p-mt-6 p-d-flex p-jc-center p-ai-center' style={{'justify-content': 'space-around',}}>
+      <div className='p-d-flex p-jc-center p-ai-center' style={{'justify-content': 'space-around',}}>
         <div className='p-m-2'><img src={data.footc} alt="zuri int."/></div>
         <div><a href='https://background.zuri.team' style={{'text-decoration': 'none', "color": "grey"}}>HNG 9 Internship Frontend Task</a></div>
         <div><img src={data.foottl} alt="HNG9"/></div>
       </div>
+
+      
     </div>
   );
 }
